@@ -8,7 +8,7 @@ module "rg_caftest" {
 }
 
 module "front-door" {
-  source = "../../../front-door"
+  source = "../.."
   #version = "0.x.y"
 
   front-door-rg         = module.rg_caftest.names.test
